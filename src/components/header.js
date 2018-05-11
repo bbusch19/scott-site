@@ -1,31 +1,31 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Cta from './cta';
+import styles from './header.module.scss'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => (
+  <div className={styles.header}>
+    <div className="container">
+      <ul className={styles.menu}>
+        <li className={[styles.logo, styles.first].join(' ')}>
+          <Link to="/">Scott Merill Realty</Link>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">How it works</a>
+        </li>
+        <li>
+          <a href="#">Get an offer</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li className={styles.right}>
+          <Cta text="1-888-888-8888" mobileText="1-888-8888" phone="1-888-888-8888" />
+        </li>
+      </ul>
     </div>
   </div>
 )

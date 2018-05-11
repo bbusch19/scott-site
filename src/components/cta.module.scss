@@ -1,0 +1,24 @@
+@import '../layouts/shared-styles';
+
+.cta {
+  a {
+    padding: 15px;
+    background-color: $blue;
+    color: $white;
+    font-family: $primary-font;
+  }
+}
+
+.text {
+  display: none;
+
+  @include medium-up {
+    display: block;
+  }
+}
+
+.mobile {
+  @include medium-up {
+    display: none;
+  }
+}
