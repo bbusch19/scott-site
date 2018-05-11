@@ -6,7 +6,7 @@ const Cta = ({text, mobileText, phone}) => (
     <div className="container">
       <div className="columns">
         <h1>Sell your house for cash fast.</h1>
-        <p>We can get cash for your house quickly. No pain, no hassle.</p>
+        <p className={styles.subhead}>We can get cash for your house quickly. No pain, no hassle.</p>
       </div>
     </div>
   </div>
