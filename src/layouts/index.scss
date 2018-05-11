@@ -64,10 +64,15 @@ h1, h2, h4, h4 {
 h1 {
 	font-size: 35px;
 	line-height: 42px;
+	color: $white;
 
 	@include medium-up {
 		font-size: 38px;
 	}
+}
+
+p {
+	margin: 15px 0;
 }
 
 a {
@@ -79,4 +84,9 @@ a {
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
+}
+
+.columns {
+	padding-left: .9375rem;
+	padding-right: .9375rem;
 }
