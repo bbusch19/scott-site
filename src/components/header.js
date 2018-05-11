@@ -15,8 +15,8 @@ class Header extends Component {
       <div className={styles.header}>
         <div className="container">
           <ul className={styles.menu}>
-            <li className={[styles.logo, styles.first].join(' ')}>
-              <a href="#" onClick={(e) => this.handleClick('top', e)}>Scott Merill Realty</a>
+            <li className={styles.logo}>
+              <a href="#" className={styles.first} onClick={(e) => this.handleClick('top', e)}>Scott Merill Realty</a>
             </li>
             <li>
               <a href="#" onClick={(e) => this.handleClick('about', e)}>About</a>
