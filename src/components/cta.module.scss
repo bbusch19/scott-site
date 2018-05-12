@@ -1,6 +1,8 @@
 @import '../layouts/shared-styles';
 
 .cta {
+  display: inline-block;
+
   a {
     padding: 15px;
     background-color: $blue;
@@ -22,6 +24,8 @@
 }
 
 .mobile {
+  display: block;
+
   @include medium-up {
     display: none;
   }

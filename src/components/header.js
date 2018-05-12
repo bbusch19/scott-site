@@ -13,11 +13,11 @@ class Header extends Component {
   render() {
     return (
       <div className={styles.header}>
-        <div className="container">
-          <ul className={styles.menu}>
-            <li className={styles.logo}>
+        <div className={`container ${styles.container}`}>
+            <div className={styles.logo}>
               <a href="#" className={styles.first} onClick={(e) => this.handleClick('top', e)}>Scott Merill Realty</a>
-            </li>
+            </div>
+          <ul className={styles.menu}>
             <li>
               <a href="#" onClick={(e) => this.handleClick('about', e)}>About</a>
             </li>
@@ -30,10 +30,10 @@ class Header extends Component {
             <li>
               <a href="#" onClick={(e) => this.handleClick('contact', e)}>Contact</a>
             </li>
-            <li className={styles.right}>
-              <Cta text="1-888-888-8888" mobileText="1-888-8888" phone="1-888-888-8888" />
-            </li>
           </ul>
+          <div className={styles.right}>
+            <Cta text="1-888-888-8888" mobileText="1-888-8888" phone="1-888-888-8888" />
+          </div>
         </div>
       </div>
     )
