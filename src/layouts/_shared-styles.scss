@@ -7,7 +7,7 @@ $secondary-font: 'Raleway', sans-serif;
 // ==================================================
 // COLORS
 // ==================================================
-$white: #ffff;
+$white: #fff;
 $gray: #2A3132;
 $blue: #336B87;
 $lightblue: #90AFC5;
@@ -49,5 +49,19 @@ $lightblue: #90AFC5;
 @mixin large-up {
   @media screen and (min-width: 1025px) {
     @content;
+  }
+}
+
+// ==================================================
+// Basic Classes
+// ==================================================
+
+.space-right {
+  margin-right: 15px;
+}
+
+.medium-up {
+  @include small {
+    display: none !important;
   }
 }

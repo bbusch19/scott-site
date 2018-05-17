@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './cta.module.scss'
 
-const Cta = ({text, mobileText, phone}) => (
-  <div className={styles.cta}>
+const Cta = ({classes = [], text, mobileText, phone}) => (
+  <div className={`${styles.cta} ${classes}`}>
     <a href={`tel:${phone}`} className={styles.text}>
       {text}
     </a>
