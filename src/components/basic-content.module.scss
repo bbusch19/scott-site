@@ -1,0 +1,11 @@
+@import '../layouts/shared-styles';
+
+.basic-content {
+  padding: 50px 0;
+  text-align: left;
+
+  @include medium-up {
+    padding: 80px 0;
+    text-align: center;
+  }
+}
