@@ -1,0 +1,21 @@
+@import '../layouts/shared-styles';
+
+.column {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+
+  @include medium-up {
+    margin: 0;
+  }
+
+  &.last {
+    margin-bottom: 0;
+  }
+
+  &.third {
+    @include medium-up {
+      width: calc(100% / 3);
+    }
+  }
+}

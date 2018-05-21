@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './basic-content.module.scss'
 
 const BasicContent = ({children, classes = ''}) => (
-  <div className={styles['basic-content']}>
+  <div className={`${styles['basic-content']} ${classes.split(' ').map(el => styles[el]).join(' ')}`}>
     <div className="container">
       <div className="columns">
         {children}

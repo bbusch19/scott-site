@@ -1,12 +1,17 @@
 @import '../layouts/shared-styles';
 
-.basic-content {
+.column-comp {
   padding: 50px 0;
   text-align: left;
 
   @include medium-up {
     padding: 80px 0;
     text-align: center;
+  }
+
+  .before {
+    padding-left: .9375rem;
+    padding-right: .9375rem;
   }
 
   &.alt-bg {
