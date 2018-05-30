@@ -41,7 +41,7 @@ const IndexPage = () => (
         </p>
       </Column>
     </ColumnComp>
-    <Form />
+    <Form header="See how much you can make" subhead="You're only one step away from your offer" />
   </div>
 )
 

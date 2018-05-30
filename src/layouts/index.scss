@@ -87,6 +87,14 @@ h2 {
 p {
 	margin: 15px 0;
 	line-height: 24px;
+
+	&.subhead {
+		margin-bottom: 15px;
+
+		@include medium-up {
+			margin-bottom: 30px;
+		}
+	}
 }
 
 a {
@@ -111,4 +119,12 @@ form {
 .columns {
 	padding-left: .9375rem;
 	padding-right: .9375rem;
+}
+
+.small-bottom {
+	margin-bottom: 5px;
+}
+
+.collapse-top {
+	margin-top: 0;
 }

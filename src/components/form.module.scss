@@ -2,9 +2,11 @@
 
 .form {
   padding: 50px 0;
+  text-align: left;
 
   @include medium-up {
     padding: 80px 0;
+    text-align: center;
   }
 
   .basic {
@@ -13,19 +15,35 @@
     padding: 15px;
     font-size: 14px;
     font-weight: 200;
-
-    &:nth-child(even) {
-      margin-right: 15px;
-    }
   }
 
   .input-container {
     display: flex;
-    flex-basis: 45%;
+    flex-basis: 100%;
     margin-bottom: 15px;
+
+    @include medium-up {
+      flex-basis: 45%;
+    }
   }
 
   .space-right {
-    margin-right: 15px;
+    margin-right: 0;
+
+    @include medium-up {
+      margin-right: 15px;
+    }
+  }
+
+  .space-top {
+    margin-top: 0;
+
+    @include medium-up {
+      margin-top: 30px;
+    }
+  }
+
+  .center {
+    justify-content: center;
   }
 }
