@@ -35,6 +35,17 @@
     }
   }
 
+  .submit {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 100px;
+    background-color: $blue;
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
   .space-top {
     margin-top: 0;
 

@@ -39,7 +39,7 @@ const Form = ({header, subhead, classes = ''}) => (
       <input className={styles.basic} type="text" name="address" placeholder="Property address" />
       </div>
       <div className={`${styles['input-container']} ${styles.center} ${styles['space-top']}`}>
-        <input type="submit" value="SUBMIT" />
+        <input className={styles.submit} type="submit" value="GET AN OFFER" />
       </div>
     </form>
     </div>
