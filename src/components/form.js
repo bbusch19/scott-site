@@ -28,7 +28,7 @@ const Form = ({classes = ''}) => (
         <input className={styles.basic} type="zip" name="zip" placeholder="Zip*" />
       </div>
       <div className={styles['input-container']}>
-        <input className={styles.basic} type="text" name="sell" placeholder="How soon would you like to sell*" />
+        <input className={styles.basic} type="text" name="timeframe" placeholder="How soon would you like to sell*" />
       </div>
       <div className={styles['input-container']}>
         <input className={styles.basic} type="text" name="home-value" placeholder="What do you think your home is worth*" />

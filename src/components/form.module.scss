@@ -13,16 +13,16 @@
     padding: 15px;
     font-size: 14px;
     font-weight: 200;
+
+    &:nth-child(even) {
+      margin-right: 15px;
+    }
   }
 
   .input-container {
     display: flex;
     flex-basis: 45%;
     margin-bottom: 15px;
-
-    &:nth-child(even) {
-      margin-right: 15px;
-    }
   }
 
   .space-right {
