@@ -4,6 +4,7 @@ import Hero from '../components/hero'
 import BasicContent from '../components/basicContent'
 import ColumnComp from '../components/columnComp'
 import Column from '../components/column'
+import Form from '../components/form'
 
 const IndexPage = () => (
   <div>
@@ -40,6 +41,7 @@ const IndexPage = () => (
         </p>
       </Column>
     </ColumnComp>
+    <Form />
   </div>
 )
 

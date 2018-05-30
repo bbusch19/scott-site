@@ -1,0 +1,31 @@
+@import '../layouts/shared-styles';
+
+.form {
+  padding: 50px 0;
+
+  @include medium-up {
+    padding: 80px 0;
+  }
+
+  .basic {
+    flex: 1;
+    border: 1px solid $lightgray1;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  .input-container {
+    display: flex;
+    flex-basis: 45%;
+    margin-bottom: 15px;
+
+    &:nth-child(even) {
+      margin-right: 15px;
+    }
+  }
+
+  .space-right {
+    margin-right: 15px;
+  }
+}
