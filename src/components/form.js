@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './form.module.scss'
 
-const Form = ({header, subhead, classes = ''}) => (
-  <div className={`${styles.form} ${classes.split(' ').map(el => styles[el]).join(' ')}`}>
+const Form = ({header, subhead, classes = '', id = ''}) => (
+  <div id={id} className={`${styles.form} ${classes.split(' ').map(el => styles[el]).join(' ')}`}>
     <div className='columns'>
     <h2 className="small-bottom">{header}</h2>
     <p className="collapse-top subhead">{subhead}</p>

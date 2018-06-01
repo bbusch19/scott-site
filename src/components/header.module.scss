@@ -31,20 +31,22 @@
     li {
       padding: 15px;
       background-color: $white;
+      cursor: pointer;
 
       @include large-up {
         margin-right: 15px;
         padding: 0;
-      }
-
-      a:not(.first) {
-        vertical-align: text-bottom;
+        padding-top: 2px;
       }
     }
 
     &.active {
-      max-height: 200px;
+      max-height: 256px;
       transition: max-height .2s linear;
+
+      @include medium {
+        max-height: 200px;
+      }
 
       @include large-up {
         max-height: none;

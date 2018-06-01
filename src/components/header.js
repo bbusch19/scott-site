@@ -11,12 +11,11 @@ class Header extends Component {
   }
 
   handleLinkClick(scrollTo, e) {
-    console.log(e.currentTarget);
-    console.log(scrollTo);
+    this.props.onClick(scrollTo);
+    this.handleClickMenu();
   }
 
   handleClickMenu(e) {
-    console.log('hit');
     this.setState({ active: !this.state.active});
   }
 
@@ -25,20 +24,23 @@ class Header extends Component {
       <div className={styles.header}>
         <div className={`container ${styles.container}`}>
             <div className={styles.logo}>
-              <a href="#" className={styles.first} onClick={(e) => this.handleLinkClick('top', e)}>Scott Merill Realty</a>
+              <a href="/" className={styles.first}>Scott Merill Realty</a>
             </div>
           <ul className={`${styles.menu} ${this.state.active ? styles.active : ''}`}>
-            <li>
-              <a href="#" onClick={(e) => this.handleLinkClick('about', e)}>About</a>
+            <li onClick={(e) => this.handleLinkClick('about', e)}>
+              About
             </li>
-            <li>
-              <a href="#" onClick={(e) => this.handleLinkClick('how-works', e)}>How it works</a>
+            <li onClick={(e) => this.handleLinkClick('how-it-works', e)}>
+              How it works
             </li>
-            <li>
-              <a href="#" onClick={(e) => this.handleLinkClick('get-offer', e)}>Get an offer</a>
+            <li onClick={(e) => this.handleLinkClick('form', e)}>
+              Get an offer
             </li>
-            <li>
-              <a href="#" onClick={(e) => this.handleLinkClick('contact', e)}>Contact</a>
+            <li onClick={(e) => this.handleLinkClick('contact', e)}>
+              Contact
+            </li>
+            <li className="mobile-only">
+            <Cta text="1-888-888-8888" mobileText="1-888-8888" phone="1-888-888-8888" />
             </li>
           </ul>
           <div className={styles.right}>

@@ -67,3 +67,9 @@ $lightblue: #90AFC5;
     display: none !important;
   }
 }
+
+.mobile-only {
+  @include medium-up {
+    display: none;
+  }
+}

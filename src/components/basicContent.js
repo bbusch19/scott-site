@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './basic-content.module.scss'
 
-const BasicContent = ({children, classes = ''}) => (
-  <div className={`${styles['basic-content']} ${classes.split(' ').map(el => styles[el]).join(' ')}`}>
+const BasicContent = ({children, classes = '', id}) => (
+  <div id={id} className={`${styles['basic-content']} ${classes.split(' ').map(el => styles[el]).join(' ')}`}>
     <div className="container">
       <div className="columns">
         {children}
