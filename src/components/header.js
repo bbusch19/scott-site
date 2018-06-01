@@ -12,7 +12,7 @@ class Header extends Component {
 
   handleLinkClick(scrollTo, e) {
     this.props.onClick(scrollTo);
-    this.handleClickMenu();
+    this.setState({ active: false});
   }
 
   handleClickMenu(e) {
