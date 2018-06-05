@@ -57,4 +57,8 @@
   .center {
     justify-content: center;
   }
+
+  &.alt-bg {
+    background-color: $lightgray;
+  }
 }

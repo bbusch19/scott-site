@@ -11,7 +11,7 @@ const NotFoundPage = () => (
       <BasicContent classes="alt-bg max-600">
       <h2 className="small-bottom">Whoops!</h2>
         <p className="collapse-top">
-          This page doesn't exist.
+          The page you're looking for doesn't exist.
         </p>
         <a href="/" className="btn">BACK TO HOME</a>
       </BasicContent>

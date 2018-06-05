@@ -145,3 +145,18 @@ form {
 .collapse-top {
 	margin-top: 0;
 }
+
+.collapse-bottom {
+	margin-bottom: 0;
+}
+
+.space-top {
+	margin-top: 30px;
+}
+
+.round-mobile {
+	@include small {
+		border-radius: 50px;
+		overflow: hidden;
+	}
+}
