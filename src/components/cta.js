@@ -4,7 +4,7 @@ import icon from '../img/icon-phn-white.svg'
 
 const Cta = ({classes = [], text, mobileText, phone, hasIcon = false}) => (
   <div className={`${styles.cta} ${classes}`}>
-    <a href="javascript:void(0);" className={styles.text}>
+    <a href={`tel:${phone}`} className={styles.text}>
       {text}
     </a>
     <a href={`tel:${phone}`} className={styles.mobile}>
