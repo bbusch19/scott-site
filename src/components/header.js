@@ -37,9 +37,6 @@ class Header extends Component {
             <li onClick={(e) => this.handleLinkClick('form', e)}>
               Get an offer
             </li>
-            <li onClick={(e) => this.handleLinkClick('contact', e)}>
-              Contact
-            </li>
             <li className="mobile-only">
             <Cta text="801-201-2707" mobileText="801-201-2707" phone="801-201-2707" />
             </li>
