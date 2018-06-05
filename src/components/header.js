@@ -41,14 +41,14 @@ class Header extends Component {
               Contact
             </li>
             <li className="mobile-only">
-            <Cta text="801-201-2707" mobileText="1-888-8888" phone="801-201-2707" />
+            <Cta text="801-201-2707" mobileText="801-201-2707" phone="801-201-2707" />
             </li>
           </ul>
           ) : (
             ''
           )}
           <div className={styles.right}>
-            <Cta classes={'medium-up space-right'} text="801-201-2707" mobileText="1-888-8888" phone="801-201-2707" />
+            <Cta classes={'medium-up space-right'} text="801-201-2707" mobileText="801-201-2707" phone="801-201-2707" />
             {!this.props.basic ? (
               <div onClick={(e) => this.handleClickMenu(e)} className={`${styles.hamburger} ${this.state.active ? styles.active : ''}`}>
                 <span className={styles.line}></span>
