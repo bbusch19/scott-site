@@ -1,9 +1,21 @@
 import React from 'react'
+import Link from 'gatsby-link'
+import Header from '../components/header'
+import Hero from '../components/hero'
+import BasicContent from '../components/basicContent'
 
 const NotFoundPage = () => (
   <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Header basic={true} />
+    <Hero classes="full-height">
+      <BasicContent classes="alt-bg max-600">
+      <h2 className="small-bottom">Whoops!</h2>
+        <p className="collapse-top">
+          This page doesn't exist.
+        </p>
+        <a href="/" className="btn">BACK TO HOME</a>
+      </BasicContent>
+    </Hero>
   </div>
 )
 
