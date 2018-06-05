@@ -21,7 +21,10 @@ class IndexPage extends Component {
     return (
       <div>
         <Header onClick={this.handleScroll} />
-        <Hero />
+        <Hero>
+          <h1>Sell your house for cash fast.</h1>
+          <p className="subhead-alt">We can get cash for your house quickly. No pain, no hassle.</p>
+        </Hero>
         <BasicContent id="about">
           <h2>This is the about section</h2>
           <p>

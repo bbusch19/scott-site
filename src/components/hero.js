@@ -1,15 +1,14 @@
 import React from 'react'
 import styles from './hero.module.scss'
 
-const Cta = ({text, mobileText, phone}) => (
-  <div className={styles.hero}>
+const Hero = ({classes = '', children}) => (
+  <div className={`${styles.hero} ${classes.split(' ').map(el => styles[el]).join(' ')}`}>
     <div className="container">
       <div className="columns">
-        <h1>Sell your house for cash fast.</h1>
-        <p className={styles.subhead}>We can get cash for your house quickly. No pain, no hassle.</p>
+        {children}
       </div>
     </div>
   </div>
 )
 
-export default Cta
+export default Hero

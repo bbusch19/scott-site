@@ -26,7 +26,8 @@ class Header extends Component {
             <div className={styles.logo}>
               <a href="/" className={styles.first}>Scott Merill Realty</a>
             </div>
-          <ul className={`${styles.menu} ${this.state.active ? styles.active : ''}`}>
+          {!this.props.basic ? (
+            <ul className={`${styles.menu} ${this.state.active ? styles.active : ''}`}>
             <li onClick={(e) => this.handleLinkClick('about', e)}>
               About
             </li>
@@ -43,13 +44,18 @@ class Header extends Component {
             <Cta text="1-888-888-8888" mobileText="1-888-8888" phone="1-888-888-8888" />
             </li>
           </ul>
+          ) : (
+            ''
+          )}
           <div className={styles.right}>
             <Cta classes={'medium-up space-right'} text="1-888-888-8888" mobileText="1-888-8888" phone="1-888-888-8888" />
-            <div onClick={(e) => this.handleClickMenu(e)} className={`${styles.hamburger} ${this.state.active ? styles.active : ''}`}>
-              <span className={styles.line}></span>
-              <span className={styles.line}></span>
-              <span className={styles.line}></span>
-            </div>
+            {!this.props.basic ? (
+              <div onClick={(e) => this.handleClickMenu(e)} className={`${styles.hamburger} ${this.state.active ? styles.active : ''}`}>
+                <span className={styles.line}></span>
+                <span className={styles.line}></span>
+                <span className={styles.line}></span>
+              </div>
+            ) : ''}
           </div>
         </div>
       </div>
