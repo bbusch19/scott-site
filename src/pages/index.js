@@ -58,7 +58,7 @@ class IndexPage extends Component {
             </p>
           </Column>
           <div className='after columns'>
-          <Cta classes="space-top round-mobile" text="Call 1-888-888-8888 to learn about how it works" mobileText="CALL TO LEARN MORE" phone="1-888-888-8888" hasIcon={true} />
+          <Cta classes="space-top round-mobile" text="Call 801-201-2707 to learn about how it works" mobileText="CALL TO LEARN MORE" phone="801-201-2707" hasIcon={true} />
           </div>
         </ColumnComp>
         <Form id="form" classes="alt-bg" header="See how much you can make" subhead="You're only one step away from your offer" />
