@@ -8,7 +8,7 @@ const SecondPage = () => (
   <div>
     <Header basic={true} />
     <Hero classes="full-height">
-      <BasicContent classes="alt-bg max-600">
+      <BasicContent classes="alt-bg max-600 center-mobile rounded">
       <h2 className="small-bottom">Thank you for your submission!</h2>
         <p className="collapse-top">
           Someone will contact you in the next 24 hours.

@@ -15,7 +15,11 @@
   &.full-height {
     display: flex;
     align-items: center;
-    height: calc(100vh - 226px);
+    height: calc(100vh - 143px);
+
+    @include medium-up {
+      height: calc(100vh - 226px);
+    }
   }
 }
 

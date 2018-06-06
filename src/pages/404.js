@@ -8,7 +8,7 @@ const NotFoundPage = () => (
   <div>
     <Header basic={true} />
     <Hero classes="full-height">
-      <BasicContent classes="alt-bg max-600">
+      <BasicContent classes="alt-bg max-600 center-mobile rounded">
       <h2 className="small-bottom">Whoops!</h2>
         <p className="collapse-top">
           The page you're looking for doesn't exist.
