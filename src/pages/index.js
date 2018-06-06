@@ -26,15 +26,7 @@ class IndexPage extends Component {
           <h1>Sell your house for cash fast.</h1>
           <p className="subhead-alt">We can get cash for your house quickly. No pain, no hassle.</p>
         </Hero>
-        <BasicContent id="about" classes="alt-bg">
-          <h2>This is the about section</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra suspendisse. Adipiscing vitae proin sagittis nisl rhoncus. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Tincidunt vitae semper quis lectus nulla. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Arcu cursus euismod quis viverra nibh cras. Hendrerit dolor magna eget est lorem ipsum dolor. Sit amet mauris commodo quis imperdiet massa. Eget sit amet tellus cras.
-          </p>
-          <p className="collapse-bottom">
-            Dui vivamus arcu felis bibendum ut tristique et. Et pharetra pharetra massa massa ultricies mi quis. Eget magna fermentum iaculis eu. Elementum sagittis vitae et leo duis ut diam quam nulla. Fusce id velit ut tortor pretium viverra suspendisse potenti nullam. Et pharetra pharetra massa massa ultricies mi quis hendrerit. Sagittis orci a scelerisque purus semper eget. Amet est placerat in egestas erat imperdiet sed. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. At urna condimentum mattis pellentesque id nibh tortor id aliquet.
-          </p>
-        </BasicContent>
+        <Form id="form" classes="alt-bg" header="See how much you can make" subhead="You're only one step away from your offer" />
         <ColumnComp id="how-it-works">
           <div className='before columns'>
             <h2>How it works</h2>
@@ -61,7 +53,15 @@ class IndexPage extends Component {
           <Cta classes="space-top round-mobile" text="Call 801-201-2707 to learn about how it works" mobileText="CALL TO LEARN MORE" phone="801-201-2707" hasIcon={true} />
           </div>
         </ColumnComp>
-        <Form id="form" classes="alt-bg" header="See how much you can make" subhead="You're only one step away from your offer" />
+        <BasicContent id="about" classes="alt-bg">
+          <h2>This is the about section</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra suspendisse. Adipiscing vitae proin sagittis nisl rhoncus. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Tincidunt vitae semper quis lectus nulla. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Arcu cursus euismod quis viverra nibh cras. Hendrerit dolor magna eget est lorem ipsum dolor. Sit amet mauris commodo quis imperdiet massa. Eget sit amet tellus cras.
+          </p>
+          <p className="collapse-bottom">
+            Dui vivamus arcu felis bibendum ut tristique et. Et pharetra pharetra massa massa ultricies mi quis. Eget magna fermentum iaculis eu. Elementum sagittis vitae et leo duis ut diam quam nulla. Fusce id velit ut tortor pretium viverra suspendisse potenti nullam. Et pharetra pharetra massa massa ultricies mi quis hendrerit. Sagittis orci a scelerisque purus semper eget. Amet est placerat in egestas erat imperdiet sed. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. At urna condimentum mattis pellentesque id nibh tortor id aliquet.
+          </p>
+        </BasicContent>
       </div>
     )
   }

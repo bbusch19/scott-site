@@ -28,14 +28,14 @@ class Header extends Component {
             </div>
           {!this.props.basic ? (
             <ul className={`${styles.menu} ${this.state.active ? styles.active : ''}`}>
-            <li onClick={(e) => this.handleLinkClick('about', e)}>
-              About
+            <li onClick={(e) => this.handleLinkClick('form', e)}>
+              Get an offer
             </li>
             <li onClick={(e) => this.handleLinkClick('how-it-works', e)}>
               How it works
             </li>
-            <li onClick={(e) => this.handleLinkClick('form', e)}>
-              Get an offer
+            <li onClick={(e) => this.handleLinkClick('about', e)}>
+              About
             </li>
             <li className="mobile-only">
             <Cta text="801-201-2707" mobileText="801-201-2707" phone="801-201-2707" />
