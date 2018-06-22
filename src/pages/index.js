@@ -32,7 +32,7 @@ class IndexPage extends Component {
             <h2>How it works</h2>
           </div>
           <Column classes='third'>
-            <h3>Step 1 – Submit a request</h3>
+            <h3>Submit a request</h3>
             <p>
               The more information we have the quicker we can write up an offer.  Tell us about the current condition of the home, necessary repairs, additions and updates that have already been done and any other important facts about the property.
             </p>
