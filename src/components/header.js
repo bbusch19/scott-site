@@ -24,7 +24,7 @@ class Header extends Component {
       <div className={styles.header}>
         <div className={`container ${styles.container}`}>
             <div className={styles.logo}>
-              <a href="/" className={styles.first}>Scott Merill Realty</a>
+              <a href="/" className={styles.first}>Whole-Sale Agent</a>
             </div>
           {!this.props.basic ? (
             <ul className={`${styles.menu} ${this.state.active ? styles.active : ''}`}>
@@ -34,9 +34,9 @@ class Header extends Component {
             <li onClick={(e) => this.handleLinkClick('how-it-works', e)}>
               How it works
             </li>
-            <li onClick={(e) => this.handleLinkClick('about', e)}>
+            {/* <li onClick={(e) => this.handleLinkClick('about', e)}>
               About
-            </li>
+            </li> */}
             <li className="mobile-only">
             <Cta text="801-201-2707" mobileText="801-201-2707" phone="801-201-2707" />
             </li>

@@ -13,6 +13,8 @@
     flex: 1;
     border: 1px solid $lightgray1;
     padding: 15px;
+    background-color: $white;
+    border-radius: 0;
     font-size: 14px;
     font-weight: 200;
   }
@@ -24,6 +26,12 @@
 
     @include medium-up {
       flex-basis: 45%;
+    }
+
+    &.full {
+      @include medium-up {
+        flex-basis: calc(90% + 15px);
+      }
     }
   }
 
