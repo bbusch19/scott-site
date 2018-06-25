@@ -140,6 +140,21 @@ select {
 	width: 100%;
 }
 
+select:invalid {
+	color: gray;
+}
+
+textarea {
+	resize: none;
+	flex: 1;
+	border: 1px solid #e9e9ea;
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 0;
+	font-size: 14px;
+	font-weight: 200;
+}
+
 .container {
 	width: 100%;
 	max-width: 1200px;

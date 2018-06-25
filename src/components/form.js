@@ -29,21 +29,24 @@ const Form = ({header, subhead, classes = '', id = ''}) => (
       <div className={`${styles['input-container']} ${styles['space-right']}`}>
         <input className={styles.basic} type="text" name="zip" placeholder="Zip*" pattern="[0-9]{5}" required />
       </div>
-      <div className={`${styles['input-container']}`}>
-        <select className={styles.basic} name="timeframe">
-          <option selected="selected">How soon would you like to sell?</option>
+      <div className={`${styles['input-container']} ${styles['select']}`}>
+        <select className={styles.basic} name="timeframe" required defaultValue="">
+          <option value="" disabled>How soon would you like to sell?*</option>
           <option value="3 months">Within 3 months</option>
           <option value="6 months">6 months</option>
           <option value="Longer">Longer</option>
         </select>
       </div>
-      <div className={`${styles['input-container']} ${styles['full']}`}>
-        <select className={styles.basic} name="condition">
-          <option selected="selected">What best describes the condition of your property?</option>
+      <div className={`${styles['input-container']} ${styles['full']} ${styles['select']}`}>
+        <select className={styles.basic} name="condition" required defaultValue="">
+          <option value="" disabled>In what condition is the property?*</option>
           <option value="Full renovation">Full renovation</option>
           <option value="Minor TLC">Minor TLC</option>
           <option value="Perfect condition">Perfect condition</option>
         </select>
+      </div>
+      <div className={`${styles['input-container']} ${styles['full']}`}>
+        <textarea name="notes" placeholder="Notes"></textarea>
       </div>
       <div className={`${styles['input-container']} ${styles.center} ${styles['space-top']}`}>
         <input className={styles.submit} type="submit" value="GET AN OFFER" />

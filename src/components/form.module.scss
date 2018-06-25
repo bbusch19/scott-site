@@ -35,6 +35,21 @@
     }
   }
 
+  .select {
+    position: relative;
+
+    &:before {
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: gray;
+      transform: rotate(180deg);
+      content: "⌃";
+      pointer-events: none;
+    }
+  }
+
   .space-right {
     margin-right: 0;
 
