@@ -27,7 +27,7 @@ const Form = ({header, subhead, classes = '', id = ''}) => (
         <input className={styles.basic} type="text" name="state" placeholder="State*" required />
       </div>
       <div className={`${styles['input-container']} ${styles['space-right']}`}>
-        <input className={styles.basic} type="text" name="zip" placeholder="Zip*" pattern="[0-9]{5}" required />
+        <input className={styles.basic} type="text" name="zip" placeholder="Zip*" pattern="[0-9]{5}" title="88888" required />
       </div>
       <div className={`${styles['input-container']} ${styles['select']}`}>
         <select className={styles.basic} name="timeframe" required defaultValue="">
